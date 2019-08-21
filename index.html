@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* height: 150px; */
+            justify-content: center;
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 150px 150px;
+
+            /*grid-template-rows: 1fr 1fr; */
+            border: black solid 1px;
+            grid-gap: 1px;
+            padding: 10px;
+
+        }
+
+        .quadrantLabel {
+            border: white solid 1px;
+            text-align: center;
+            height: 300px;
+            width: 200px;
+            vertical-align: middle;
+            line-height: 150px;
+
+        }
+
+        #TopLeft {
+            background-color: red;
+            height: 150px;
+            width: 150px;
+            border-radius: 100% 0px 0px 0px;
+        }
+
+        #TopRight {
+            background-color: yellow;
+            height: 150px;
+            width: 150px;
+            border-radius: 0px 100% 0px 0px;
+            border-color: white;
+        }
+
+        #BottomLeft {
+            background-color: blue;
+            height: 150px;
+            width: 150px;
+            border-radius: 0px 0px 0px 100%;
+        }
+
+        #BottomRight {
+            background-color: green;
+            height: 150px;
+            width: 150px;
+            border-radius: 0px 0px 100% 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+
+    <div class="grid-container">
+        <div id="grid-item">
+            <div id="TopLeft" class="quadrantLabel">Red</div>
+        </div>
+        <div id="grid-item">
+            <div id="TopRight" class="quadrantLabel">Yellow</div>
+        </div>
+        <div id="grid-item">
+            <div id="BottomLeft" class="quadrantLabel">Blue</div>
+        </div>
+        <div id="grid-item">
+            <div id="BottomRight" class="quadrantLabel">Green</div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav">
+                <div id="navleft">
+                    <div id="navlogo">
+                        <h1>Logo</h1>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#"></a><strong>Products</strong></li>
+                            <li><a href="#"></a><strong>Music</strong></li>
+                            <li><a href="#"></a><strong>Play</strong></li>
+                            <li><a href="#"></a><strong>Connect</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="navcenter">
+                    Center
+                </div>
+                <input type="text" placeholder="Search...">
+                <div id="navright">
+                    <ul>
+                        <li><a href="#"></a><strong>Sign In / Dealer Locator</strong></li>
+                        <li><a href="#"></a><strong>View Cart</strong></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <br>
+
+</body>
+
+</html>
