@@ -5,7 +5,6 @@
 }
 
 li {
-    background-color:black;
     text-align: center;
     vertical-align: middle;
     border: 1px solid black;
@@ -28,6 +27,10 @@ ul {
 
 
 }
+.navItems {
+    justify-content: center;
+    padding-left: 30px;
+}
 
 
 .nav {
@@ -38,11 +41,14 @@ ul {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100px;
+    
 }
 
 .nav li {
     font-size: 20px;
-    padding: 0px;
+    padding: 10px;
+    display: inline-block;
 }
 
 
@@ -51,7 +57,7 @@ header {
 }
 
 #navleft {
-    width: 33.33%;
+    /* width: 33.33%; */
     display: flex;
 
 }
@@ -74,11 +80,37 @@ header {
 }
 
 #navlogo {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     background-color: red;
     color: white;
+    padding: 0px;
 }
+    
+#search {
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    
+}
+#magnifyingGlass {
+    width: 10px;
+    height: 10px;
+    filter: invert(100%);
+}
+
+.mGlass {
+    background-color: red;
+    width: 18px;
+    height: 18px;
+}
+
+#ShoppingCart {
+    width: 25px;
+    height: 20px;
+    filter: invert(100%);
+}
+
 /* .input[type=text] {
     float: center;
     padding: 6px;
